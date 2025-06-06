@@ -34,19 +34,19 @@
         .app-icon {
             width: 120px;
             height: 120px;
-            background: linear-gradient(45deg, #ff6b6b, #feca57);
-            border-radius: 26px;
             margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 48px;
-            font-weight: bold;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 26px;
+            overflow: hidden;
         }
         
-        .app-icon::before {
-            content: "⏱️";
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
         
         h1 {
@@ -171,7 +171,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="app-icon"></div>
+            <div class="app-icon">
+                <img src="logo.svg" alt="TimeBurn App Icon" />
+            </div>
             <h1>TimeBurn</h1>
             <p class="tagline">Professional Interval Timer for iOS & watchOS</p>
         </div>
@@ -233,7 +235,7 @@
             <div class="contact-card">
                 <h2>Need Help?</h2>
                 <p>We're here to help! Reach out to us for support, bug reports, or feature requests.</p>
-                <a href="mailto:support@timeburn.app" class="contact-btn">📧 Email Support</a>
+                <a href="mailto:timeburn.app@outlook.com" class="contact-btn">📧 Email Support</a>
                 <a href="https://github.com/yourusername/TimeBurn/issues" class="contact-btn">🐛 Report Issue</a>
             </div>
             
